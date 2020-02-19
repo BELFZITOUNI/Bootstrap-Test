@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- bootstrap en local -->
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <!-- Bootstrap en CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .rose {
+            background: lightgreen;
+        }
+
+        .bleu {
+            background: lightseagreen;
+        }
+
+        .vert {
+            background: lightseagreen;
+        }
+
+        .red {
+            background: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- REFERENCE DES TAILLES DU RESPONSIVE -->
+    <!-- https://getbootstrap.com/docs/4.4/layout/grid/#grid-options -->
+    <!-- https://www.booglit.com/bootstrap-conteneur-et-grille/ FRANCAIS -->
+    <h1>Décors</h1>
+
+    <!-- La NavBar de notre site -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="jumbotron">
+            <h2>Page 2-Grille</h2>
+        </div>
+        <!-- La div contient le contenu de la nav et le container n'est pas "fluid" -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Décors</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Acceuil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prix</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nos pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="page1.html">Page 1</a>
+                            <a class="dropdown-item" href="page2.html">Grille, ex.</a>
+                            <a class="dropdown-item" href="#">Page 3</a>
+                            <a class="dropdown-item" href="#">Page 4</a>
+                            <a class="dropdown-item" href="#">Page 5</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Fermeture div container -->
+        </div>
+    </nav>
+
+
+    <!-- container 2 -->
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Page 3 - Formulaires</h1>
+        </div>
+    </div><!-- fermeture div container -->
+
+        <div class="container rose p-4">
+
+            <form action="#" method="post">
+                <div class="form-group row">
+                    <label for="text" class="col-md-2 col-form-label">Texte : </label>
+                    <input type="text" id="text" class="col-md-6">
+                </div>
+
+               <div class="form-group row">
+                    <label for="textarea col-form-label" class="col-md-2">Zone de texte</label>
+                    <input type="textarea" id="textarea" class="col-md-6">
+               </div>
+
+               <div class="form-group row">
+                    <label for="select" class="col-md-2">Select</label>
+                    <select id="select" class="col-md-6">
+                        <option value="">option - 1</option>
+                        <option value="">option - 2</option>
+                        <option value="">option - 3</option>
+                    </select>
+               </div>
+                <div class="form-group row"><div class="col"><button type="submit">Envoyer</button></div></div>
+            </form>
+        </div>
+
+        <hr>
+
+        
+        <div class="row">
+            <div class="col md-10 bleu ml-md-auto">
+                <form class="form-inline">
+                    <label for="text">Texte</label>
+                    <input type="text" class="form-control" id="text" placeholder="un texte ici">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Se rappeler de moi...
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
+
+    <!-- <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- Scrit  jquery, popper,, bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

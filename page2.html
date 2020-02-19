@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- bootstrap en local -->
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <!-- Bootstrap en CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .rose{
+                background: lightgreen;
+            }
+            .bleu{
+                background: lightseagreen;
+            }
+            .vert{
+                background: lightseagreen;
+            }
+            .red{
+                background: tomato;
+            }
+        </style>
+</head>
+<body>
+<!-- REFERENCE DES TAILLES DU RESPONSIVE -->
+<!-- https://getbootstrap.com/docs/4.4/layout/grid/#grid-options -->
+<!-- https://www.booglit.com/bootstrap-conteneur-et-grille/ FRANCAIS -->
+    <h1>Décors</h1>
+
+    <!-- La NavBar de notre site -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="jumbotron">
+            <h2>Page 2-Grille</h2>
+        </div>
+        <!-- La div contient le contenu de la nav et le container n'est pas "fluid" -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Décors</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Acceuil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prix</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nos pages 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="page1.html">Page 1</a>
+                            <a class="dropdown-item" href="page2.html">Grille, ex.</a>
+                            <a class="dropdown-item" href="#">Page 3</a>
+                            <a class="dropdown-item" href="#">Page 4</a>
+                            <a class="dropdown-item" href="#">Page 5</a>    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Fermeture div container -->
+        </div>
+    </nav>
+
+
+    <!-- container 2 -->
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Page 2 - Grille</h1>
+        </div>
+    </div><!-- fermeture div container -->
+    
+    <!-- container 3 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 rose">1</div>
+            <div class="col-md-8 vert">2</div>
+        </div><!-- fin row  -->
+        <hr>
+    </div><!-- fermeture div container 3-->
+
+    
+    <!-- container 4 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 bleu">1</div>
+            <div class="col-sm-3 rose">2</div>
+            <div class="col-sm-6 vert">3</div>
+        </div><!-- fin row  -->
+        <hr>
+    </div><!-- fermeture div container 4-->
+
+
+
+    <!-- container 5 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 rose"><p>1</p></div>
+            <div class="col-sm-2 bleu">2 colonnes</div>
+            <div class="col-sm-3 red">3 colonnes</div>
+            <div class="col-sm-6 vert">6 colonnnes</div>
+        </div><!-- fin row  -->
+
+        <div class="row">
+            <div class="col-md-12bleu">12 colonnes</div>
+        </div><!-- fin row  -->
+
+        <div class="row">
+            <div class="col rose">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem, atque expedita voluptas dolorum esse amet quis repudiandae fuga labore in distinctio voluptatibus quam impedit, quisquam sunt perferendis nobis ab.</p>
+            </div>
+            <div class="col-auto red">2/ c'est auto</div>
+            <div class="col vert">3/ et là ceci cela</div>
+        </div><!-- fin row  -->
+
+        <hr><hr>
+
+        <div class="row">
+            <div class="col-6 red">Elément</div>
+            <div class="col-6 vert">Elément</div>
+            <div class="col-6 rose">Elément</div>
+            <div class="col-6 red">Elément</div>
+        </div><!-- fin row  -->
+        <hr>
+    </div><!-- fermeture div container 5-->
+
+
+    <!-- container 6 -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col red">
+                    <h5 class="bg-primary w-50">Elément w-50</h5>
+                </div>
+                <div class="col vert">Elément</div>
+                <div class="w-100 rose">Elément w-100</div>
+                <div class="col red">Elément</div>
+                <div class="col bleu">Elément</div>
+            </div><!-- fin row  -->
+            <hr>
+        </div><!-- fermeture div container 6-->
+
+
+        <!-- container 6 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 vert">3 colonnes</div>
+                <div class="col-sm-6 rose">6 colonnes</div>
+                <div class="col-sm-3 bleu">3 colonnes</div>
+            </div>
+            <div class="row">
+                <div class="col-3 rose">3 colonnes gauche</div>
+                <div class="col-3 rose ml-auto-">3 colonnes droite</div>
+            </div>
+        </div><!-- fermeture div container 6-->
+        
+<!-- container 7 -->
+
+
+
+
+
+
+    <!-- <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    
+    <!-- Scrit  jquery, popper,, bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
