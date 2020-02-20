@@ -5,29 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluation 2</title>
     <link rel="stylesheet" href="css/evaluation-2.css">
-    
+    <!-- Lien bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
+    <h1>webforce</h1>
+
+<img src="img/background.jpg", ="img/vehicule1.jpg",="img/vehicule2.jpg", ="img/vehicule3.jpg", ="img/vehicule4.jpg" alt="Texte alt" id="monImage">
+<script>
+    var img = 0;
+    function f() {
+        img += 1;
+        monImage.setAttribute("src", "img/" + img + ".jpg");
+        if (img == 6) {
+            // clearInterval permet de stopper un setInterval
+            clearInterval(timer)
+        }
+    }
+    // setinterval permet de lancer une fonction tous les X millième de seconde
+    var timer = window.setInterval('f()', 1000);
+</script>
+
+
+
+    <div class="container">
+        <div class="row">
+            <!-- <div class="">
+                <div><img src="img/background.jpg" alt="mercedes"></div>
+                <div><img src="img/vehicule1.png.jpg" alt="mercedes"></div>
+                <div><img src="img/vehicule2.png.jpg" alt="mercedes"></div>
+                <div><img src="img/vehicule3.png.jpg" alt="mercedes"></div>
+                <div><img src="img/vehicule4.png.jpg" alt="mercedes"></div>
+            </div> -->
+            <!-- <div class=""></div> -->
+        </div><!-- fin row  -->
+        <hr>
+    </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-   
-
-
-
-
-    <!-- Optional JavaScript en CDN -->
-
+    <!-- lien Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS en CDN -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
