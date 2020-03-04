@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div.move {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            bottom: 2px solid red;
+            padding: 5px;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="move" class="move">
+        Appuyez sur les touches directionnel de votre clavier
+    </div>
+
+    <script>
+
+        function clavier(e){
+
+            var carre = document.getElementById('move');
+
+            if (e.keyCode == '38') { // 38 correspond à la flèche du haut
+                carre.style.top = (carre.offsetTop - 10) + "px";
+            }
+            else if (e.keyCode == '40') {// flèche du bas
+                             carre.style.top = (carre.offsetTop + 10) + 'px';
+            }
+            else if (e.keyCode == '37') {// flèche de gauche
+                carre.style.left = (carre.offsetLeft - 10) + 'px';
+               }
+            else if (e.keyCode == '39') {// flèche de droite
+                carre.style.left = (carre.offsetLeft + 10) + 'px';
+            }
+            if (e.keyCode == '38') { // 38 correspond à la flèche du haut
+                   carre.style.top = (carre.offsetTop - 10) + "px";
+            }
+                          else if (e.keyCode == '40') {// flèche du bas
+                carre.style.top = (carre.offsetTop + 10) + 'px';
+            }
+            else if (e.keyCode == '37') {// flèche de gauche
+                carre.style.left = (carre.offsetLeft - 10) + 'px';
+            }
+            else if (e.keyCode == '39') {// flèche de droite
+            };
+        }
+
+
+    </script>
+
+</body>
+
+</html>
